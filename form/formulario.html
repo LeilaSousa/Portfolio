@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        :root{
+            --roxo1: #5700a3;
+            --roxo2: #8000f0;
+            --roxo3: #DBB6FE;    
+        }
+        body{
+            background-image: linear-gradient(135deg, var(--roxo1), var(--roxo3));
+            height: 130vh;
+        }
+        h1, p{
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: lighter;
+            color: darkblue;
+            padding: 5px;
+        }
+        fieldset{
+            margin: auto;
+            max-width: 30em;
+            border-radius: 0.5em;
+            line-height: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--roxo3);
+            box-shadow: 6px 9px 13px 5px rgba(0, 0, 0, 0.289);
+        }
+        label{
+            font-weight: bold;
+        }
+        .identificacao>input{
+            width: 300px;
+            
+        }
+        input{
+            margin: 5px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+        input:focus{
+            background-color: lightgrey;
+        }
+        select{
+            width: 300px;
+            margin: 5px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+        .outras{
+            width: 300px;
+            height: 100px;
+        }
+        .botao{
+            text-align: center;
+            padding: 10px;
+        }
+        button{
+            background-color: var(--roxo2);
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        button:hover{
+            background-color: var(--roxo1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <p>Informe seus dados</p>
+    <form>
+        <fieldset>
+            <div class="identificacao">
+                <label >Nome</label><br>
+                    <input type="text" required><br>
+                <label>Sobrenome</label><br>
+                    <input type="text" required><br>
+            </div>
+            <label>Como você se identifica?</label><br>
+                <input type="radio"  >Mulher
+                <input type="radio" >Homem
+                <input type="radio" >Outro
+                <input type="radio" >Não quero informar
+            <br>
+            <label>Estado</label><br>
+            <select>
+                <option selected disabled value="">selecione</option>
+                <option>São Paulo</option>
+                <option>Minas Gerais</option>
+                <option >Rio de Janeiro</option>
+                <option >Espírito Santo</option>
+            </select><br>
+            <label>Ocupação</label><br>
+            <select>Selecione sua ocupação atual
+                <option selected disabled value="">selecione</option>
+                <option>desempregado</option>
+                <option>estudante</option>
+                <option>trabalho em tempo integral</option>
+                <option>trabalho informal</option>
+                <option>outros</option><br>
+            </select><br>
+            <label>Selecione os meios que você utiliza para acessar a internet</label><br>
+                <input type="checkbox">Celular
+                <input type="checkbox">Notebook
+                <input type="checkbox">Computador pessoal<br>
+                <input type="checkbox">Computador do trabalho/escola 
+                <input type="checkbox">outros<br>
+            <label>Outras Informações</label><br>
+                <input type="text" class="outras">
+            <div class="botao"><button>Enviar</button></div>
+        </fieldset>
+    </form>
+</body>
+</html>
