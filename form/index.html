@@ -13,15 +13,15 @@
     <form>
         <fieldset>
             <div class="identificacao">
-                <label >Nome</label><br>
-                    <input type="text" required><br>
-                <label>Sobrenome</label><br>
-                    <input type="text" required><br>
+                <label for="name">Nome</label><br>
+                    <input type="text" name="name" id="name" required placeholder="Digite seu nome"><br>
+                <label for="lastname">Sobrenome</label><br>
+                    <input type="text" name="lastname" id="lastname" required placeholder="Digite seu sobrenome"><br>
             </div>
-            <label>Como você se identifica?</label><br>
-                <input type="radio"  name="radsex">Mulher
-                <input type="radio" name="radsex" >Homem
-                <input type="radio" name="radsex">Outro
+            <label for="sex">Como você se identifica?</label><br>
+                <input type="radio" name="radsex" id="sex">Mulher
+                <input type="radio" name="radsex" id="sex">Homem
+                <input type="radio" name="radsex" id="sex">Outro
             <br>
             <label>Estado</label><br>
             <select>
@@ -31,15 +31,6 @@
                 <option >Rio de Janeiro</option>
                 <option >Espírito Santo</option>
             </select><br>
-            <label>Ocupação</label><br>
-            <select>Selecione sua ocupação atual
-                <option selected disabled value="">selecione</option>
-                <option>desempregado</option>
-                <option>estudante</option>
-                <option>trabalho em tempo integral</option>
-                <option>trabalho informal</option>
-                <option>outros</option><br>
-            </select><br>
             <label>Selecione os meios que você utiliza para acessar a internet</label><br>
                 <input type="checkbox">Celular
                 <input type="checkbox">Notebook
@@ -47,8 +38,12 @@
                 <input type="checkbox">Computador do trabalho/escola 
                 <input type="checkbox">outros<br>
             <label>Outras Informações</label><br>
-                <input type="text" class="outras">
-            <div class="botao"><button type="submit">Enviar</button></div>
+                <input type="text" class="outras"><br>
+            <div id="gostou">
+                <label for="like">Gostou? &#x1f60d</label><br>
+                    <input type="range"name="like"id="like">
+            </div>
+            <div class="botao"><input type="submit"value="Enviar" id="botao"></div>
         </fieldset>
     </form>
 </body>
