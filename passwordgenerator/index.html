@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+    
+</head>
+<body>
+    <main>
+        <div id="initial">
+            <h1>Pré-validação de Senha</h1>
+                <form >
+                    <label for="password">Escolha uma senha</label><br>
+                    <input type="password" id="password" name="password" 
+                    onkeyup="comparar()" ><br>
+                    <label for="passwordconfirmation">Repita a senha</label><br>
+                    <input type="password" id="passwordconfirmation" name="passwordconfirmation" ><br>
+                    <input class="button" type="button" value="Enviar"onclick="enviar()"></input>
+                </form>
+            <div id="fb">
+                <p id="fbmai">Deve conter letras maiúsculas</p>
+                <p id="fbmin">Deve conter letras minúsculas</p>
+                <p id="fbn">Deve conter números.</p>
+                <p id="fbce">Deve conter caracteres especias</p>
+            </div>
+            <div id="validation"></div>
+        </div>
+        <div id="success">
+            <h1>Senha cadastrada com sucesso!</h1>
+            <img src="icon-ok.png" alt="success icon">
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
