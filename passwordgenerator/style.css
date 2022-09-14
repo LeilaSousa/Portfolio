@@ -42,9 +42,9 @@
     border-radius: 0.5em;
 }#fb{
     display: block;
-    padding: 0em 1.5em 0em 1.5em ;
+    padding: 0em 1em 0em 1.5em ;
 }#fb>p{
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
     color: var(--LigthBlue)
 }#validation{
     padding: 0em 1em 0em 1.5em;
