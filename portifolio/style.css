@@ -137,7 +137,6 @@
     font-weight: bold;
     background-color:var(--azul);
     color: whitesmoke; 
-    width: 98.7vw;
 }footer>a{
     text-decoration: none;
     color: var(--vermelho);
