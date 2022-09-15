@@ -8,8 +8,7 @@
     --rosa: #ffc7c9;
     --azul: #014d6d;
     --verde: #069aa8;
-}
-*{
+}*{
     margin: 0px;
     padding: 0px;
     font-family: 'Anek Latin', sans-serif;
@@ -46,7 +45,7 @@
     padding: 5px 30px;
     border-radius: 3px;
 }section{
-   width: 98.7vw;
+   width: 100vw;
    height: 80vh;   
 }#apresentacao {
     font-size: 2em;
