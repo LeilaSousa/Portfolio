@@ -1,3 +1,3 @@
 # portfolio
 Portifólio Pessoal<br>
-Veja meu portfólio em https://leilasousa.github.io/portfolio/portifolio/
+Veja meu portfólio em https://leilasousa.github.io/Projects
